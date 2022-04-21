@@ -1,15 +1,19 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.scss'
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { EmployeesList } from "./components/EmployeesList";
+
+import "./App.scss";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const userIsExternal = true;
 
   return (
-    <div className="App">
-      
-    </div>
-  )
+    <>
+      <Header />
+      <EmployeesList userIsExternal={userIsExternal} />
+      <Footer userIsExternal={userIsExternal} />
+    </>
+  );
 }
 
-export default App
+export default App;

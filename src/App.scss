@@ -1,0 +1,14 @@
+body{
+    background-color: #333;
+    color: #ccc;
+    padding: 20px;
+    .employee{
+        background-color: #000;
+        .employee-name{
+            color: white;
+        }
+        .employee-title{
+            color: yellow;
+        }
+    }
+}
